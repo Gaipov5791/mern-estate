@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSlice';
+import { 
+	signInStart, 
+	signInSuccess, 
+	signInFailure 
+} from '../redux/user/userSlice';
 import {useSelector, useDispatch} from 'react-redux';
 
 const SignIn = () => {
