@@ -24,6 +24,7 @@ const Profile = () => {
         if (file) {
             handleFileUpload(file);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [file]);
 
     const handleFileUpload = (file) => {
@@ -38,6 +39,7 @@ const Profile = () => {
                 const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 setImagePercent(progress);
             },
+            // eslint-disable-next-line no-unused-vars
             (error) => {
                 setImageError(true);
             },
