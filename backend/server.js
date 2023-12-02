@@ -8,6 +8,7 @@ const port = process.env.PORT || 5000;
 import connectDB from './config/db.js';
 import userRouter from './routes/userRoutes.js';
 import authRouter from './routes/authRoutes.js';
+import listingRouter from './routes/listingRoutes.js';
 
 connectDB();
 
@@ -22,6 +23,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
+app.use("/api/listing", listingRouter);
 
 //middleware
 app.use((err, req, res, next) => {
