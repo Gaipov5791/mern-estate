@@ -124,7 +124,9 @@ const CreateListing = () => {
                         />
                         <button className="p-3 text-green-700 border border-green-700 rounded uppercase hover:shadow-lg disabled:opacity-80">Upload</button>
                     </div>
-                    <button className="bg-slate-700 text-white uppercase p-3 rounded-lg hover:opacity-95 disabled:opacity-80">Create Listing</button>
+                    <button className="bg-slate-700 text-white uppercase p-3 rounded-lg hover:opacity-95 disabled:opacity-80">
+                        Create Listing
+                    </button>
                 </div>
             </form>
         </main>
